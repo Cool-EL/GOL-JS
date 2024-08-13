@@ -1,0 +1,45 @@
+:root {
+    --canvas-border-size: 1px;
+    --canvas-border-color: gray;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(139, 139, 139);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    height: inherit;
+    max-width: 90vw;
+    max-height: inherit;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.body-el {
+    flex: 1;
+}
+
+#info-keys, #info-data {
+    font-size: 20px;
+    margin-top: 10vh;
+    align-self: baseline;
+}
+
+#gol-canvas {
+    width: calc( 100vh - ( var(--canvas-border-size) * 2 ) );
+    height: calc( 100vh - ( var(--canvas-border-size) * 2 ) );
+    max-width: calc( 100vh - ( var(--canvas-border-size) * 2 ) );
+    max-height: calc( 100vh - ( var(--canvas-border-size) * 2 ) );
+    border: var(--canvas-border-size) solid var(--canvas-border-color);
+    background-color: white;
+}
